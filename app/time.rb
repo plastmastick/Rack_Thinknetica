@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class AppTime
-
   FORMATS = {
     'year' => :year,
     'month' => :month,
@@ -52,5 +51,4 @@ class AppTime
     converted_time = @user_format.map { |f| Time.now.send(FORMATS[f]) }
     converted_time.join('-')
   end
-
 end

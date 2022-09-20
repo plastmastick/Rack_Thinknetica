@@ -4,7 +4,6 @@ require 'rack'
 require_relative 'time'
 
 class Application
-
   PATHS = {
     '/time' => :time
   }.freeze
@@ -27,5 +26,4 @@ class Application
       ['Resource not found']
     ]
   end
-
 end

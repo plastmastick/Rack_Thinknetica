@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Runtime
-
   def initialize(app)
     @app = app
   end
@@ -13,5 +12,4 @@ class Runtime
 
     [status, headers, body]
   end
-
 end

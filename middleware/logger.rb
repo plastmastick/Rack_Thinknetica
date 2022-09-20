@@ -3,7 +3,6 @@
 require 'logger'
 
 class AppLogger
-
   def initialize(app, **options)
     @logger = Logger.new(options[:logdev] || $stdout)
     @app = app
@@ -13,5 +12,4 @@ class AppLogger
     @logger.info(env)
     @app.call(env)
   end
-
 end
